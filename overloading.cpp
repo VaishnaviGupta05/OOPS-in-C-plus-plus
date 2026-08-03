@@ -1,23 +1,29 @@
 #include<iostream>
 using namespace std;
 void sum();
-int sum(int,int);
-int sum(int,int,float);
-int main(){
-  int a,b,r1;
-  float r2,c;
-  cout<<"enter the numbers:";
-  cin>>a>>b;
-  r1= sum(a,b);
-  r2= sum(a,b,c);
-  cout<<"the sum is :"<<r1;
-  cout<<"the sum is:"<<r2;
-}
-void sum (){
-    int x,y,s;
-    cout<<"enter the numbers:";
-    cin>>x>>y;
-    s=x+y;
-    cout<<"the sum is:"<<s;
-}
+int sum(int, int);
+float sum(int, float, int);
+int main() {
+    int a, b, r1;
+    float c, r2;
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
+    sum();
+    r1 = sum(a, b);
+    cout << "Sum function 2: " << r1 << endl;
+    r2 = sum(a, c, b);
+    cout << "Sum function 3: " << r2 << endl;
 
+}
+void sum() {
+    int a, b;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+    cout << "Sum function 1: " << a + b << endl;
+}
+int sum(int a, int b) {
+    return a + b;
+}
+float sum(int x, float y, int z) {
+    return x + y + z;
+}
