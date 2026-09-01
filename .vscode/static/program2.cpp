@@ -4,17 +4,16 @@ class Example{
     static int n;
     int a;
     public:
-    Example(int x = 0);
-     void display();
-};
-int Example::n = 10;
-Example::Example(int x){
+    Example(int x);
+    static void display();
+};  
+void Example::geta(int x){
     a = x;
 }
+int Example::n = 10;
 void Example::display(){
     cout<<n;
 }
 int main(){
-    Example E1;
-    E1.display();
+    Example::display();
 }
