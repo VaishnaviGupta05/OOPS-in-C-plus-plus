@@ -5,6 +5,7 @@ class Example{
     int a;
     public:
     Example(int x);
+    void geta(int x);
     static void display();
 };  
 void Example::geta(int x){
