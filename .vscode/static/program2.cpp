@@ -8,7 +8,7 @@ class Example{
     void geta(int x);
     static void display();
 };  
-void Example::geta(int x){
+void Example::geta(int x){   //:: scope resolution operator
     a = x;
 }
 int Example::n = 10;
