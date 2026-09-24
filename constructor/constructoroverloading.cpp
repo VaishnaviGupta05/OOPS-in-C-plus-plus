@@ -30,9 +30,14 @@ void Number::display() {
     cout << "a = " << a << ", b = " << b << endl;
 }
 int main() {
+    int x, y;
+    cout << "Enter value for one-argument constructor: ";
+    cin >> x;
+    cout << "Enter values for two-argument constructor: ";
+    cin >> y;
     Number obj1;         // default constructor
-    Number obj2(5);      // parameterized constructor
-    Number obj3(7, 9);   // parameterized constructor
+    Number obj2(x);      // parameterized constructor
+    Number obj3(x, y);   // parameterized constructor
     cout << "obj1: ";
     obj1.display();
     cout << "obj2: ";
