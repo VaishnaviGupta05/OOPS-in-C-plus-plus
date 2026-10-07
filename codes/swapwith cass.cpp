@@ -5,12 +5,15 @@ class SwapNumbers
 private:
 	int first;
 	int second;
-
 public:
 	void getData()
 	{
 		cout << "Enter two numbers: ";
-		cin >> first >> second;
+		if (!(cin >> first >> second))
+		{
+			cerr << "Invalid input. Please enter two integers." << endl;
+			exit(1);
+		}
 	}
 	void swapValues()
 	{
