@@ -15,7 +15,7 @@ class B{
     void getb(int);
     void showb();
     friend class A;
-    void displayA(A);
+    void displayA(A); // jisme object ayega wahi friend hoga so ye hi friend h bas 
 };
 void A::geta(int x){
     a = x;
@@ -37,13 +37,13 @@ void B:: displayA(A A1){
     cout<<A1.a<<endl;
 }
 int main(){
-    A X;
+    A X; // A ko intialize karne ke liye object h 
     X.geta(10);
     X.showa();
     B Y;
     Y.getb(20);
     Y.showb();
-    X.displayB(Y);
+    X.displayB(Y);// isme obj le raha h parameter B ka 
     Y.displayA(X);
 }
 
