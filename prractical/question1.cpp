@@ -16,7 +16,7 @@ float Rectangle::area() const {
 int main() {
    Rectangle rectangle;
    rectangle.Breadth();
-   cout << "Area of rectangle: " << rectangle.area() << endl;
+   cout <<"Area of rectangle: "<<rectangle.area()<<endl;
    return 0;
 }
 
