@@ -5,7 +5,7 @@ class Example {
 public:
     void getdata(int x, int y);
     void display();
-    Example sum(Example other);
+    Example sum(Example E);
 };
 void Example::getdata(int x, int y) {
     a = x;
@@ -14,10 +14,10 @@ void Example::getdata(int x, int y) {
 void Example::display() {
     cout << "a = " << a << ", b = " << b << endl;
 }
-Example Example::sum(Example other) {
+Example Example::sum(Example E) {
     Example result;
-    result.a = a + other.a;
-    result.b = b + other.b;
+    result.a = a + E.a;
+    result.b = b + E.b;
     return result;
 }
 int main() {
