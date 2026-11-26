@@ -1,24 +1,29 @@
 #include <iostream>
 using namespace std;
+
 class Student {
-private:
-    int rollNumber;
+    int age;
+    string name;
+
 public:
-    // Parameterized constructor
-    Student(int rollNumber) {
-        this->rollNumber = rollNumber;
-        cout << "Parameterized constructor called" << endl;
+    Student() : Student(18, "Unknown") {
+        cout << "Default constructor" << endl;
     }
-    // Default constructor calls the parameterized constructor
-    Student() : Student(10) {
-        cout << "Default constructor called" << endl;
+
+    Student(int a, string n) {
+        age = a;
+        name = n;
+        cout << "Parameterized constructor" << endl;
     }
+
     void display() {
-        cout << "Roll number: " << rollNumber << endl;
+        cout << name << " " << age << endl;
     }
 };
+
 int main() {
-    Student student;
-    student.display();
+    Student s;
+    s.display();
+
     return 0;
 }
