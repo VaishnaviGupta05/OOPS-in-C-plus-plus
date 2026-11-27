@@ -17,3 +17,8 @@ int main(){
     Parameter P(10,20);
     P.display();
 }
+
+// calling constructor explicity 
+// Parameter P = Parameter(10,20);
+// calling the constructor Implicitly
+// parameter P(10,20);
